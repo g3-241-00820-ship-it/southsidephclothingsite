@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Home page of Your Website" />
+  <title>Jam Tech — Home</title>
+  <style>
+    /* Minimal styling so you can see structure clearly */
+    body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; }
+    header, footer { background:	#810000; color:#fff; padding: 16px; }
+    nav ul { display:flex; gap:16px; list-style:none; padding:0; margin:8px 0 0; }
+    nav a { color:#fff; text-decoration:none; }
+    nav a[aria-current="page"] { text-decoration: underline; font-weight: 700; }
+    main { padding: 24px; }
+    .hero { background:				#bad012; padding:24px; border:1px solid 		#003f3f; border-radius:8px; }
+    .grid { display:grid; gap:16px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); margin-top:16px; }
+    .card { border:1px solid #003f3f; border-radius:8px; padding:16px; background:#fff; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Jam Tech</h1>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Welcome to Jam Tech</h2>
+      <p>Where you can find our shipment of computers and other tech in the world.</p>
+      <p><a href="services.html">Explore our services →</a></p>
+    </section>
+
+    <section>
+      <h2>Highlights</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>New Keyboard is ariving</h3>
+          <img src="assets/images/New Keyboard.webp" alt="alternativetext.com" width="360" height="142">
+          <p>We introducing a new keyboard that can used by gamers.</p>
+        </article>
+        <article class="card">
+          <h3>Greeting a new Employee</h3>
+          <img src="assets/images/Employee.jfif" alt="alternativetext.com" width="200" height="142">
+          <p>This guy will help us our team.</p>
+        </article>
+        <article class="card">
+          <h3>19th Anniversary</h3>
+          <img src="assets/images/yayya.jpg" alt="alternativetext.com" width="360" height="142">
+          <p>Its a great celebration to the founding of our company.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Jam Tech. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Auto-update footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+``

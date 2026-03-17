@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Services page of Your Website" />
+  <title>Jam Tech — Services</title>
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; }
+    header, footer { background:	#810000; color:#fff; padding: 16px; }
+    nav ul { display:flex; gap:16px; list-style:none; padding:0; margin:8px 0 0; }
+    nav a { color:#fff; text-decoration:none; }
+    nav a[aria-current="page"] { text-decoration: underline; font-weight: 700; }
+    main { padding: 24px; }
+    .grid { display:grid; gap:16px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+    .card { border:1px solid #003f3f; border-radius:8px; padding:16px; background:#fff; }
+    .card a { display:inline-block; margin-top:8px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Jam Tech</h1>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html" aria-current="page">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <header>
+      <h2>Tech Gears</h2>
+      <p>These are you finding off.</p>
+    </header>
+
+    <section aria-label="Service list" class="grid">
+      <article class="card">
+        <h3>Monitor</h3>
+        <p>High standard monitor and some good graphics.</p>
+        <img src="assets/images/Monitor.avif" alt="alternativetext.com" width="360" height="142">
+
+        <a href="contact.html">Inquire →</a>
+      </article>
+      <article class="card">
+        <h3>System Unit</h3>
+        <p>With GTX system.</p>
+        <img src="assets/images/System Unit.webp" alt="alternativetext.com" width="360" height="142">
+        <a href="contact.html">Inquire →</a>
+      </article>
+      <article class="card">
+        <h3>Speakers</h3>
+        <p>High max audio and good for gaming and other activities.</p>
+        <img src="assets/images/Speakers.webp" alt="alternativetext.com" width="360" height="142">
+        <a href="contact.html">Inquire →</a>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Jam Tech. All rights reserved.</p>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

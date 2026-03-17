@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Contact page of Your Website" />
+  <title>Jam Tech — Contact</title>
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; }
+    header, footer { background:#810000; color:#fff; padding: 16px; }
+    nav ul { display:flex; gap:16px; list-style:none; padding:0; margin:8px 0 0; }
+    nav a { color:#fff; text-decoration:none; }
+    nav a[aria-current="page"] { text-decoration: underline; font-weight: 700; }
+    main { padding: 24px; }
+    form { max-width: 560px; margin-top: 16px; }
+    label { font-weight: 600; }
+    input, textarea { width: 100%; padding: 10px; margin: 8px 0 16px; border:1px solid 		#810000; border-radius:6px; font: inherit; }
+    button { background:	#810000; border:none; color:#fff; padding:10px 16px; border-radius:6px; cursor:pointer; }
+    button:hover { opacity:.9; }
+    .contact-info { margin-top: 8px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Jam Tech</h1>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li>index.htmlHome</a></li>
+        <li>about.htmlAbout</a></li>
+        <li>services.htmlServices</a></li>
+        <li>contact.htmlContact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <header>
+      <h2>Contact Us</h2>
+      <p>If you have some problems of the shipment. Just reach out for questions or service requests.</p>
+      <div class="contact-info">
+        <p>Email: mailto:you@example.comyou@example.com</a></p>
+        <p>Phone: tel:+639123456789+63 912 345 6789</a></p>
+      </div>
+    </header>
+
+    <section aria-label="Contact form">
+      <h3>Send a Message</h3>
+      #
+        <div>
+          <label for="name">Full Name</label><br />
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div>
+          <label for="email">Email</label><br />
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div>
+          <label for="message">Message</label><br />
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit">Send</button>
+      </form>
+      <!-- Note: Backend processing will be added in later weeks -->
+    </section>
+  </main>
+
+  <a href="index.html">
+    <button style="background-color: violet; color: fuchsia;">Home</button>
+  </a>
+
+  <footer>
+    <p>© <span id="year"></span> Jam Tech. All rights reserved.</p>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
